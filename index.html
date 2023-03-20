@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lluvia de Asteroides</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body onload="canvasAsteroide()"> 
+        <div> 
+            <h1>Lluvia de Asteroides</h1>
+            <span id="mensaje" onclick="reiniciar()">Intenta llegar a la base sin chocarte con los asteroides y sin agotar los puntos. Si chocas con un asteroide, deberás contestar una pregunta de matemática. Si aciertas, puedes continuar jugando, si fallas, el juago terminará.</span><br>
+            Puntuación: <span id="puntuacion">40</span><br> 
+            Tiempo: <span id="tiempo">15</span> <br>
+            Respuesta: <input type="text" id="domTextElement" >  <button id="enviar"> Enviar respuesta </button> 
+        </div>
+        <canvas id="miCanvas" width="600" height="600"></canvas> 
+    </body>
+</html>
